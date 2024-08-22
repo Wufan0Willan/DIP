@@ -23,7 +23,7 @@ Our DIP frontend is suitable for both time-domain and frequency domain separator
 3. For time domain separator, asteroid toolkit is recommanded;  
    For test results on Vox2Mix, LRS2Mix and Real-M test set, please refer to the paper.   
 
-We will update the script for both frontend pretraining, separator training and checkpoint of DIP later.   
+We have not checked the correctness of all scripts. Please do neccessary modification for your pretraining and training process. We will update the script for both frontend pretraining and separator training later.     
 
 ### License
 The code and models in this repository are licensed under the [GNU General Public License v3](https://www.gnu.org/licenses/gpl-3.0.en.html) for academic and other non-commercial uses. For commercial use, the enquirers will require a license from us or sublicense from a collaborated company if the company decides on an exclusive license for the invention.
