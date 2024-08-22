@@ -9,10 +9,10 @@ To papare the multiple domain data, an example is in dataset/PT_vox2k_full:
 2. train_target.tsv, valide_target.tsv are required for target domain real mixture;
 The label of mixture is not needed;
 
-#### pretrain model
+#### Pretrain model
 To pretrain the DIP model, using run.sh;
 
-#### train separator
+#### Train separator
 Our DIP frontend is suitable for both time-domain and frequency domain separator:
 
 1. For frequency domain separator, S3prl toolkit is recommanded;  
