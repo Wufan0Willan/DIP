@@ -13,9 +13,12 @@ To pretrain the DIP model, using run.sh;
 
 #### train separator
 Our DIP frontend is suitable for both time-domain and frequency domain separator:
+
 1. For frequency domain separator, S3prl toolkit is recommanded;
    
-2. For time domain separator, asteroid toolkit is recommanded
+2. For time domain separator, asteroid toolkit is recommanded;
+
+We will update the script for both frontend pretraining, separator training and checkpoint of DIP later. 
 
 ### License
 The code and models in this repository are licensed under the [GNU General Public License v3](https://www.gnu.org/licenses/gpl-3.0.en.html) for academic and other non-commercial uses. For commercial use, the enquirers will require a license from us or sublicense from a collaborated company if the company decides on an exclusive license for the invention.
