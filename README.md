@@ -1,6 +1,7 @@
 # Domain-invariant Pretrained(DIP) frontend
 The official Domain-invariant Pretrained(DIP) frontend implementation based on fairseq and the pretrained checkpoint as mentioned in System.13.
 Our paper link is availiable(https://ieeexplore.ieee.org/document/10640238)
+The checkpoint of pretrained frontend is avaliable(https://drive.google.com/file/d/15_YZAF1MJs4VybuYM2FSsLQau_I0qir-/view?usp=drive_link)
 
 ##### Data preparing
 To papare the multiple domain data, an example is in dataset/PT_vox2k_full:
@@ -15,8 +16,9 @@ To pretrain the DIP model, using run.sh;
 Our DIP frontend is suitable for both time-domain and frequency domain separator:
 
 1. For frequency domain separator, S3prl toolkit is recommanded;
-   
-2. For time domain separator, asteroid toolkit is recommanded;
+   Please replace the original s3pel/upstream/expert.py to our version. The test results on Libri2Mix should be about 11dB:  
+   ![S3PRL](img/S3PRL_Libri2Mix_DIP.PNG "S3PRL_DIP_Libri2Mix") 
+3. For time domain separator, asteroid toolkit is recommanded;
 
 We will update the script for both frontend pretraining, separator training and checkpoint of DIP later. 
 
