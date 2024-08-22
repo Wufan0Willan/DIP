@@ -1,5 +1,6 @@
 # Domain-invariant Pretrained(DIP) frontend
 The official Domain-invariant Pretrained(DIP) frontend implementation based on fairseq and the pretrained checkpoint as mentioned in System.13.
+Our paper link is availiable(https://ieeexplore.ieee.org/document/10640238)
 
 ##### Data preparing
 To papare the multiple domain data, an example is in dataset/PT_vox2k_full:
