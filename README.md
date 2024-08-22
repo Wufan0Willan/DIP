@@ -16,7 +16,7 @@ To pretrain the DIP model, using run.sh;
 Our DIP frontend is suitable for both time-domain and frequency domain separator:
 
 1. For frequency domain separator, S3prl toolkit is recommanded;  
-   Please replace the original s3prl/upstream/expert.py to our version in separation/expert.py.The test results on Libri2Mix should be about 11dB:  
+   Please replace the original s3prl/upstream/wav2vec2/expert.py to our version in separation/expert.py.The test results on Libri2Mix should be about 11dB:  
    ![S3PRL](img/S3PRL_Libri2Mix_DIP.PNG "S3PRL_DIP_Libri2Mix")  
    For test results on Vox2Mix test set, please refer to the paper.  
    
