@@ -1,27 +1,27 @@
 # Domain-invariant Pretrained(DIP) frontend
 The Domain-invariant Pretrained(DIP) frontend implementation based on fairseq and the pretrained checkpoint as mentioned in System.13.  
-Our paper link is availiable(https://ieeexplore.ieee.org/document/10640238)  
-The checkpoint of pretrained frontend is avaliable(https://drive.google.com/file/d/15_YZAF1MJs4VybuYM2FSsLQau_I0qir-/view?usp=drive_link)  
+Our paper link is available (https://ieeexplore.ieee.org/document/10640238)  
+The checkpoint of the pretrained frontend is available (https://drive.google.com/file/d/15_YZAF1MJs4VybuYM2FSsLQau_I0qir-/view?usp=drive_link)  
 
 ##### Data preparing
-To papare the multiple domain data, an example is in dataset/PT_vox2k_full:
+To prepare the multiple domain data, an example is in dataset/PT_vox2k_full:
 1. train_source.tsv, valid_target.tsv are required for source domain synthetic mixture;
 2. train_target.tsv, valide_target.tsv are required for target domain real mixture;
-The label of mixture is not needed;
+The label of the mixture is not needed;
 
 #### Pretrain model
 To pretrain the DIP model, using run.sh;
 
 #### Train separator
-Our DIP frontend is suitable for both time-domain and frequency domain separator:
+Our DIP frontend is suitable for both time-domain and frequency-domain separators:
 
-1. For frequency domain separator, S3prl toolkit is recommanded;  
-   Please replace the original s3prl/upstream/wav2vec2/expert.py to our version in separation/expert.py.The test results on Libri2Mix should be about 11dB:  
+1. For frequency domain separator, the S3prl (https://github.com/s3prl/s3prl) toolkit is recommended;  
+   Please replace the original s3prl/upstream/wav2vec2/expert.py with our version in separation/expert.py.The test results on Libri2Mix should be about 11dB:  
    ![S3PRL](img/S3PRL_Libri2Mix_DIP.PNG "S3PRL_DIP_Libri2Mix")  
-   For test results on Vox2Mix test set, please refer to the paper.  
+   For test results on the Vox2Mix test set, please refer to the paper.  
    
-3. For time domain separator, asteroid toolkit is recommanded;  
-   For test results on Vox2Mix, LRS2Mix and Real-M test set, please refer to the paper.   
+3. For the time domain separator, the asteroid toolkit (https://github.com/asteroid-team/asteroid) is recommended;  
+   For test results on Vox2Mix, LRS2Mix, and Real-M test sets, please refer to the paper.   
 
 We have not checked the correctness of all scripts. Please do neccessary modification for your pretraining and training process. We will update the script for both frontend pretraining and separator training later.     
 
